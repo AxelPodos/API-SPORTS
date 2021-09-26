@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tobs Challenge</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="Estilos/styles.css">
+</head>
+
+<body>
+
+    <h1 id="title" style="text-align: center;">Tobs Challenge</h1>
+ 
+    <nav>
+      <input type="checkbox" id="check">
+      <label class="logo">Api Sports</label>
+      <ul>
+        <li><a href="index.html">Readme</a></li>
+        <li><a href="paises.html">Paises/Ligas</a></li>
+        <li><a href="jugadores.html">Jugadores</a></li>
+      </ul>
+    </nav>
+
+    <br>
+
+    <h1 id="proyecto">Frontend</h1>
+    <ul id="items">
+      <li> Html5. </li>
+      <li> Css Estilos: Utilizados para algunas Tags, Estructuras del HTML, y la Barra de navegación. </li>
+      <li> Boostrap: Para la creación dinámica de tablas en pestañas Paises/Ligas y Jugadores. </li>
+    </ul>  
+
+    <h1 id="proyecto">Backend</h1>
+    <ul id="items">
+      <li> Javascript. </li>
+      <li> Libreria Axios: Para consumir servicios de la API (AllSportsApi). </li>  
+      <li> Libreria Jquery: Para el "bindeo" de algunos elementos del HTML a JS. </li>
+    </ul>  
+
+    <h1 id="proyecto">1° API</h1>
+    <ul id="items">
+      <li> Llamado a /countries: "apiv2.allsportsapi.com/football?met=Countries". </li>
+      <li> Llamado a /leagues: "apiv2.allsportsapi.com/football?met=Leagues" </li>  
+      <li> Interacción: Filtro que al buscar por el nombre del País, muestra ligas y torneos correspondientes al mismo. </li>
+    </ul> 
+
+    <h1 id="proyecto">2° API</h1>
+    <ul id="items">
+      <li> Llamado a /topscores: "apiv2.allsportsapi.com/football?met=Topscorers".  </li>
+      <li> Interacción: Filtro que al buscar por el nombre del Goleador, muestra propiedades como goles, asistencias, penales. </li>
+    </ul> 
+
+    <h1 id="proyecto">AGREGADO PERSONAL</h1>
+    <ul id="items">
+      <li> Cuando llamamos a /topscores, la tabla se muestra tal cual el json de la API, por lo que ciertos nombres de jugadores aparecen duplicados como objetos en el mismo. Decidí agregar una funcionalidad para que la tabla se muestra sin duplicados (metodos comentados en app.js). La tabla de esa manera queda mas legible, mostrando a cada jugador una vez. 
+      </li>
+    </ul> 
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="</script>
+
+</body>
+
+</html>
+
